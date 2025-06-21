@@ -1,22 +1,111 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <header>
 
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="less/principal.less">
+</head>
 
-    <main>
+<body>
+   <header>
+    <section class="contenedor-ancho-limitado">
+      <div class="header-contenedor">
+        <div class="texto-contenedor">
+          <h1>Richard Galo</h1>
+          <p>Desarrollador web apasionado por la creación de experiencias digitales modernas, funcionales y
+            responsivas.</p>
+        </div>
+        <div class="imagen-perfil">
+          <picture>
+            <source srcset="/IMGS/perfil1PC.jpg" media="(min-width:1025px)" />
+            <source srcset="/IMGS/perfil1TB.jpg" media="(min-width:768px)" />
+            <img src="/IMGS/perfil1PH.jpg" alt="Foto principal" class="principal-imagen imagen-animable">
+          </picture>
+        </div>
+      </div>
+    </section>
+  </header>
 
-    </main>
+  <main>
+    <section class="contacto">
+      <div class="contenedor-ancho-limitado contacto">
+        <div class="perfil-imagen">
+          <picture>
+            <source srcset="/IMGS/perfil2PC.jpg" media="(min-width:1025px)" />
+            <source srcset="/IMGS/perfil2TB.jpg" media="(min-width:768px)" />
+            <img src="/IMGS/perfil2PH.jpg" alt="Foto de perfil" class="imagen-animable">
+          </picture>
+        </div>
+        <div class="contacto-info">
+          <h2>Información de Contacto</h2>
+          <p><strong>Emails:</strong> richardgalo2003@gmail.com, ricb_galoa@unicah.edu</p>
+          <p><strong>Teléfonos:</strong> +504 95348146, +504 97840682</p>
+          <p><strong>Ubicación:</strong> San Marcos de Colón, Choluteca, Honduras</p>
+          <p><strong>GitHub:</strong><a href="https://github.com/Rick282003" target="_blank"
+              title="Enlace a Pefil de GitHub"> Rick282003</a></p>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      
-    </footer>
-  </body>
+    <section class="biografia">
+      <div class="contenedor-ancho-limitado">
+        <h2>Biografía</h2>
+        <p> Soy un apasionado del desarrollo web con interés en crear experiencias digitales funcionales y
+          atractivas.
+          Además, soy fotógrafo, lo que me brinda una perspectiva más estética y sensibilidad visual que
+          aplico
+          al diseño web para lograr sitios visualmente agradables y bien estructurados.</p>
+      </div>
+    </section>
+
+    <section class="proyectos">
+      <div class="contenedor-ancho-limitado">
+        <h2>Proyectos</h2>
+        <div class="grid-proyectos">
+          <div class="proyecto">
+            <picture>
+              <source srcset="/IMGS/scoutsHondurasPC.jpg" media="(min-width:1025px)" />
+              <source srcset="/IMGS/scoutsHondurasTB.jpg" media="(min-width:768px)" />
+              <img src="/IMGS/scoutsHondurasPH.jpg" alt="Proyecto 1">
+            </picture>
+            <h3>Scouts de Honduras</h3>
+            <p>Este sitio web se desarrolló como proyecto práctico de la clase Portales Web I. Su objetivo
+              fue aplicar los conocimientos adquiridos durante el período académico.</p>
+          </div>
+          <div class="proyecto">
+            <picture>
+              <source srcset="/IMGS/planEstudioPC.jpg" media="(min-width:1025px)" />
+              <source srcset="/IMGS/planEstudioTB.jpg" media="(min-width:768px)" />
+              <img src="/IMGS/planEstudioPH.jpg" alt="Proyecto 2">
+            </picture>
+            <h3>Plan de Estudio ICC</h3>
+            <p>Este proyecto permite visualizar de forma secuencial las asignaturas del plan de estudios de
+              la carrera de Ingeniería en Ciencias de la Computación. Utiliza colores para representar los
+              requisitos de cada clase y las asignaturas que se habilitan. Fue creado para poner en
+              práctica el uso de JavaScript.</p>
+          </div>
+          <div class="proyecto proyecto-propia-fila ">
+            <picture>
+              <source srcset="/IMGS/atomoPC.jpg" media="(min-width:1025px)" />
+              <source srcset="/IMGS/atomoTB.jpg" media="(min-width:768px)" />
+              <img src="/IMGS/atomoPH.jpg" alt="Proyecto 3">
+            </picture>
+            <h3>Átomo</h3>
+            <p>El propósito de esta página es practicar el uso de <em>keyframes</em> para lograr
+              animaciones, como los electrones girando alrededor del núcleo para simular un átomo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy;Richard Galo 2025 Portales Web II UNICAH. Todos los derechos reservados.
+
+  </footer>
+</body>
+
 </html>

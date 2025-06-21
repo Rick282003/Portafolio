@@ -1,0 +1,150 @@
+.contacto {
+    background-color: #252525;
+    padding: @2 @05;
+
+    .contenedor-ancho-limitado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: @1;
+
+
+
+        &.contacto {
+            // para cuando tiene ambas clases
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: @1;
+        }
+
+        .perfil-imagen {
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 2.5px solid @rojo-hover;
+                object-fit: cover;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                    box-shadow: 0 6px 16px @rojo-oscuro;
+                }
+            }
+
+        }
+
+        .contacto-info {
+            text-align: center;
+
+            h2 {
+                padding-bottom: @05;
+                color: @rojo-suave;
+            }
+
+            a {
+                text-decoration: none;
+                color: @rojo-claro;
+            }
+        }
+    }
+}
+
+
+
+.biografia {
+    background-color: #1e1e1e;
+    padding: @2 @1;
+    text-align: center;
+
+    .contenedor-ancho-limitado {
+        h2 {
+            color: @rojo-suave;
+            padding-bottom: @05;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.proyectos {
+    padding: @2 @1;
+    background-color: #1a1a1a;
+    text-align: center;
+
+    .contenedor-ancho-limitado {
+        h2 {
+            color: @rojo-principal;
+            margin-bottom: @2;
+        }
+
+        .grid-proyectos {
+            display: grid;
+            grid-template-columns: 1fr; // 📱 Mobile: 1 columna
+            gap: @2;
+
+            .proyecto {
+                background-color: #2a2a2a;
+                border-radius: 10px;
+                padding: @1;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 16px @rojo-oscuro;
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                    object-fit: cover;
+                    max-height: 200px;
+                }
+
+                h3 {
+                    color: #f5f5f5;
+                    margin-top: @1;
+                }
+
+                p {
+                    color: #ccc;
+                    margin-top: @05;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        // 📱 Tablet: 2 columnas
+        @media (min-width: @tablet) {
+            .grid-proyectos {
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+            }
+
+            .proyecto-propia-fila {
+                grid-column: 1 / -1;
+                justify-self: center;
+                width: 70%; // o el valor que necesites
+            }
+        }
+
+        // 💻 PC: 3 columnas
+        @media (min-width: @desktop) {
+            .grid-proyectos {
+                grid-template-columns: repeat(3, 1fr);
+                justify-content: center;
+            }
+
+            .proyecto-propia-fila {
+                grid-column: auto;
+                justify-self: stretch;
+                width: 100%;
+            }
+        }
+    }
+}
