@@ -10,7 +10,7 @@
         margin-right: auto;
 
         h1 {
-            font-size: 2rem;
+            font-size: @2;
             color: @rojo-principal;
             text-align: inherit;
         }
@@ -25,7 +25,7 @@
     .imagen-perfil {
         img {
             width: 250px;
-            border-radius: 20px;
+            .border20px();
             object-fit: cover;
             box-shadow: 0 0 5px @rojo-hover;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -36,23 +36,22 @@
         }
     }
 
-    //Tablet
+    //TABLET
     @media (min-width: @tablet) {
         flex-direction: row;
-        justify-content: center; // <-- más compacto
+        justify-content: center;
         align-items: center;
-        gap: @1; // <-- más estrecho
+        gap: @1;
+        padding: @2 @1;
 
         .texto-contenedor {
-            width: 50%; // <-- más compacto
+            width: 50%;
             text-align: left;
         }
 
         .imagen-perfil {
             width: 40%;
-        }
-
-        padding: @2 @1;
+        } 
     }
 
     //PC
@@ -71,7 +70,5 @@
                 height: 40vh;
             }
         }
-
-
     }
 }

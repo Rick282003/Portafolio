@@ -1,4 +1,16 @@
 /*VARIABLES*/
+@principal-background-color: rgb(47, 46, 46);
+@segundo-background-color: #252525;
+@tercero-background-color: #1e1e1e;
+@tarjetas-background-color: #1a1a1a;
+@proyecto-background-color:  #2a2a2a;
+@footer-background-color:  #111;
+
+@principal-text-color: #f5f5f5;
+@footer-text-color: #bbb;
+@proyecto-title-text-color: #f5f5f5;
+@proyecto-text-color: #ccc;
+
 @rojo-principal:  #e63946;
 @rojo-claro: #fbdada;
 @rojo-suave: #f28482;
@@ -11,24 +23,29 @@
 @2: 2rem;
 
 
-
-
-
 /*MIXINS*/
 .allHtml {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-
-@tablet: 768px;
-@desktop: 1025px;
-
-/*BREAK POINTS*/
-#breaks {
-    tablet: 768px;
-    desktop: 1025px;
-    wide: 2300px;
+.border8px {
+    border-radius: 8px;
+}
+.border10px {
+    border-radius: 10px;
+}
+.border20px {
+    border-radius: 20px;
+}
+.border30px {
+    border-radius: 30px;
+}
+.border50 {
+    border-radius: 50%;
 }
 
+
+/*BREAK POINTS*/
+@tablet: 768px;
+@desktop: 1025px;
